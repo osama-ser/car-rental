@@ -1,0 +1,125 @@
+/* ملف التنسيق الموحد لجميع صفحات الموقع */
+
+/* الخطوط: نوع وحجم الخط لكل الكلمات من مكان واحد */
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+h1 { font-size: 28px; margin: 0 0 10px 0; }
+h2 { font-size: 22px; color: #0b4f8a; }
+h3 { font-size: 18px; }
+
+p, li, td, th, label, legend, span, a, button {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* الترويسة وقائمة التنقل */
+#header {
+  background-color: #0b4f8a;
+  color: #ffffff;
+  padding: 18px 24px;
+}
+
+#nav {
+  background-color: #08365e;
+  padding: 0 24px;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li { display: inline-block; }
+
+#nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+
+#nav a:hover, #nav a.active { background-color: #f39c12; color: #000000; }
+
+#content {
+  max-width: 980px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px 28px;
+  border: 1px solid #d5dde5;
+}
+
+#footer {
+  text-align: center;
+  padding: 14px;
+  color: #555555;
+  font-size: 14px;
+}
+
+/* تنسيق عناصر الإدخال النصية من مكان واحد (اللون والخط) */
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+  background-color: #fffbe6;
+  color: #0b3d6b;
+  border: 1px solid #8aa4bd;
+  padding: 6px 8px;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 16px;
+  width: 260px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus,
+select:focus, textarea:focus {
+  background-color: #e6f4ff;
+  outline: 2px solid #0b4f8a;
+}
+
+fieldset { border: 1px solid #8aa4bd; padding: 12px 18px; margin: 14px 0; }
+legend { font-weight: bold; color: #0b4f8a; padding: 0 8px; }
+
+.row { margin: 10px 0; }
+.row label { display: inline-block; width: 190px; vertical-align: top; }
+
+.error { color: #c0392b; font-size: 14px; margin-right: 8px; }
+.hint { color: #777777; font-size: 13px; }
+
+/* الأزرار */
+button {
+  background-color: #0b4f8a;
+  color: #ffffff;
+  border: none;
+  padding: 9px 22px;
+  cursor: pointer;
+}
+button:hover { background-color: #f39c12; color: #000000; }
+
+/* جداول */
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #c3cfda; padding: 8px; text-align: center; }
+th { background-color: #0b4f8a; color: #ffffff; }
+tr.details-row td { background-color: #fff8e1; text-align: right; }
+.details-row { display: none; }
+.details-row.shown { display: table-row; }
+.hidden { display: none; }
+
+#bookingBox { display: none; }
+#result {
+  display: none;
+  border: 2px solid #27ae60;
+  background-color: #eafaf1;
+  padding: 14px 20px;
+  margin-top: 18px;
+}
+#result .total-line { font-weight: bold; }
+.notice { color: #c0392b; font-weight: bold; }
+.center { text-align: center; }
+
+.branch-title { cursor: pointer; color: #0b4f8a; }
+.branch-title:hover { color: #f39c12; }

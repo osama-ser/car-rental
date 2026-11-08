@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>السيارات - مكتب تأجير السيارات</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+  <div id="header">
+    <h1>مكتب تأجير السيارات</h1>
+    <span>Car Rental Office</span>
+  </div>
+
+  <div id="nav">
+    <ul>
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="AboutUs.html">من نحن</a></li>
+      <li><a href="Cars.html" class="active">السيارات</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <h2>السيارات المتوفرة للتأجير</h2>
+    <p class="hint">فعّل مربع "إظهار التفاصيل" لعرض معلومات السيارة، ثم اختر سيارة أو أكثر واضغط "متابعة".</p>
+
+    <table id="carsTable">
+      <tr>
+        <th>الرمز</th>
+        <th>الصورة</th>
+        <th>الموديل</th>
+        <th>سنة الصنع</th>
+        <th>السعر اليومي</th>
+        <th>إظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+      <tr id="car-1">
+        <td class="code" id="code-1">CR-001</td>
+        <td><img src="images/car1.svg" alt="Toyota Corolla" width="100" height="40" /></td>
+        <td class="model" id="model-1">Toyota Corolla</td>
+        <td class="year">2023</td>
+        <td class="price" id="price-1">250000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-1" name="sd-1" value="1" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-1" name="sel-1" value="CR-001" /></td>
+      </tr>
+      <tr class="details-row" id="details-1">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Toyota Corolla:</strong>
+            نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 18,000 كم - اللون: أبيض
+          </div>
+        </td>
+      </tr>
+      <tr id="car-2">
+        <td class="code" id="code-2">CR-002</td>
+        <td><img src="images/car2.svg" alt="Kia Sportage" width="100" height="40" /></td>
+        <td class="model" id="model-2">Kia Sportage</td>
+        <td class="year">2022</td>
+        <td class="price" id="price-2">400000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-2" name="sd-2" value="2" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-2" name="sel-2" value="CR-002" /></td>
+      </tr>
+      <tr class="details-row" id="details-2">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Kia Sportage:</strong>
+            نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 45,000 كم - اللون: رمادي
+          </div>
+        </td>
+      </tr>
+      <tr id="car-3">
+        <td class="code" id="code-3">CR-003</td>
+        <td><img src="images/car3.svg" alt="Hyundai Elantra" width="100" height="40" /></td>
+        <td class="model" id="model-3">Hyundai Elantra</td>
+        <td class="year">2024</td>
+        <td class="price" id="price-3">300000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-3" name="sd-3" value="3" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-3" name="sel-3" value="CR-003" /></td>
+      </tr>
+      <tr class="details-row" id="details-3">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Hyundai Elantra:</strong>
+            نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 8,500 كم - اللون: أسود
+          </div>
+        </td>
+      </tr>
+      <tr id="car-4">
+        <td class="code" id="code-4">CR-004</td>
+        <td><img src="images/car4.svg" alt="Chevrolet Spark" width="100" height="40" /></td>
+        <td class="model" id="model-4">Chevrolet Spark</td>
+        <td class="year">2021</td>
+        <td class="price" id="price-4">180000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-4" name="sd-4" value="4" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-4" name="sel-4" value="CR-004" /></td>
+      </tr>
+      <tr class="details-row" id="details-4">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Chevrolet Spark:</strong>
+            نوع الوقود: بنزين - ناقل الحركة: يدوي - عدد المقاعد: 4 - عداد الكيلومترات: 72,000 كم - اللون: أحمر
+          </div>
+        </td>
+      </tr>
+      <tr id="car-5">
+        <td class="code" id="code-5">CR-005</td>
+        <td><img src="images/car5.svg" alt="Hyundai Tucson" width="100" height="40" /></td>
+        <td class="model" id="model-5">Hyundai Tucson</td>
+        <td class="year">2022</td>
+        <td class="price" id="price-5">450000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-5" name="sd-5" value="5" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-5" name="sel-5" value="CR-005" /></td>
+      </tr>
+      <tr class="details-row" id="details-5">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Hyundai Tucson:</strong>
+            نوع الوقود: ديزل - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 38,000 كم - اللون: أزرق
+          </div>
+        </td>
+      </tr>
+      <tr id="car-6">
+        <td class="code" id="code-6">CR-006</td>
+        <td><img src="images/car6.svg" alt="Toyota Hiace" width="100" height="40" /></td>
+        <td class="model" id="model-6">Toyota Hiace</td>
+        <td class="year">2020</td>
+        <td class="price" id="price-6">380000 ل.س</td>
+        <td><input type="checkbox" class="show-details" id="sd-6" name="sd-6" value="6" /></td>
+        <td><input type="checkbox" class="select-car" id="sel-6" name="sel-6" value="CR-006" /></td>
+      </tr>
+      <tr class="details-row" id="details-6">
+        <td colspan="7">
+          <div class="details-box">
+            <strong>تفاصيل Toyota Hiace:</strong>
+            نوع الوقود: ديزل - ناقل الحركة: يدوي - عدد المقاعد: 12 - عداد الكيلومترات: 96,000 كم - اللون: أبيض
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <p class="center">
+      <button type="button" id="continueBtn">متابعة</button>
+    </p>
+    <p id="selectMsg" class="notice"></p>
+
+    <div id="bookingBox">
+      <h2>نموذج طلب الحجز</h2>
+      <p>السيارات المختارة: <span id="selectedList"></span></p>
+
+      <form id="bookingForm" action="Cars.html" method="get">
+        <fieldset>
+          <legend>بيانات مقدم الطلب</legend>
+          <div class="row">
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" />
+            <span class="error" id="err-fullName"></span>
+            <div class="hint">أحرف عربية فقط</div>
+          </div>
+          <div class="row">
+            <label for="nationalId">الرقم الوطني (إلزامي):</label>
+            <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+            <span class="error" id="err-nationalId"></span>
+            <div class="hint">11 خانة، أول خانتين من 01 إلى 14</div>
+          </div>
+          <div class="row">
+            <label for="mobile">رقم الموبايل:</label>
+            <input type="tel" id="mobile" name="mobile" />
+            <span class="error" id="err-mobile"></span>
+            <div class="hint">Syriatel (093, 098, 099) أو MTN (094, 095, 096)</div>
+          </div>
+          <div class="row">
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" />
+            <span class="error" id="err-email"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>مدة التأجير</legend>
+          <div class="row">
+            <label for="startDate">تاريخ البداية (إلزامي):</label>
+            <input type="text" id="startDate" name="startDate" maxlength="10" />
+            <span class="error" id="err-startDate"></span>
+            <div class="hint">الصيغة yyyy-mm-dd مثال: 2026-12-01</div>
+          </div>
+          <div class="row">
+            <label for="endDate">تاريخ النهاية (إلزامي):</label>
+            <input type="text" id="endDate" name="endDate" maxlength="10" />
+            <span class="error" id="err-endDate"></span>
+            <div class="hint">الصيغة yyyy-mm-dd ويجب أن يكون لاحقاً لتاريخ البداية</div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>خيارات إضافية</legend>
+          <div class="row">
+            <label for="branch">فرع الاستلام:</label>
+            <select id="branch" name="branch">
+              <option value="دمشق">دمشق</option>
+              <option value="حلب">حلب</option>
+              <option value="اللاذقية">اللاذقية</option>
+              <option value="حمص">حمص</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="notes">ملاحظات:</label>
+            <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
+          </div>
+        </fieldset>
+
+        <p class="center"><button type="submit" id="submitBtn">إرسال</button></p>
+      </form>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <div id="footer">مكتب تأجير السيارات &#169; 2026</div>
+</body>
+</html>
